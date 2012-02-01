@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://zwaldowski.github.com/BlocksKit/com.dizzytechnology.BlocksKit.atom/20120201022024</id>
+    <title type="text">BlocksKit Documentation</title>
+    <rights>Copyright © 2012 Dizzy Technology. All rights reserved.</rights>
+    <link rel="self" href="http://zwaldowski.github.com/BlocksKit/com.dizzytechnology.BlocksKit.atom"></link>
+    <docset:publisherName>Dizzy Technology</docset:publisherName>
+    <docset:publisherID>com.dizzytechnology.documentation</docset:publisherID>
+    <updated>2012-02-01T02:20:24-05:00</updated>
+    <entry>
+        <id>tag:zwaldowski.github.com,2012-02-01:com.dizzytechnology.BlocksKit/1.0.4</id>
+        <title type="text">BlocksKit Documentation</title>
+        <updated>2012-02-01T02:20:24-05:00</updated>
+        <content type="text">BlocksKit Documentation (v1.0.4)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http://zwaldowski.github.com/BlocksKit/com.dizzytechnology.BlocksKit-1.0.4.xar" length="160000"></link>
+        <docset:identifier>com.dizzytechnology.BlocksKit</docset:identifier>
+        <docset:version>1.0.4</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>
