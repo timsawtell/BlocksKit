@@ -40,9 +40,9 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/delay">&nbsp;&nbsp;&nbsp;&nbsp;delay</option>
-	
 	<option value="//api/name/handler">&nbsp;&nbsp;&nbsp;&nbsp;handler</option>
+	
+	<option value="//api/name/handlerDelay">&nbsp;&nbsp;&nbsp;&nbsp;handlerDelay</option>
 	
 	
 	
@@ -88,9 +88,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delay">delay</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handler">handler</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handlerDelay">handlerDelay</a></span></li>
 	
 </ul></li>
 
@@ -150,7 +150,7 @@
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Block functionality for UIGestureRecognizer.</p>
 
-<p>Use of the <a href="#//api/name/delay">delay</a> property is pretty straightforward, although
+<p>Use of the delay property is pretty straightforward, although
 cancellation might be a little harder to swallow.  An example
 follows:</p>
 
@@ -209,7 +209,7 @@ the given block asynchronously after a number of seconds.</p></span>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithHandler:delay:">&ndash;&nbsp;initWithHandler:delay:</a></code>
 		<span class="tooltip"><p>Initializes an allocated gesture recognizer that will call the given block
-after a given <a href="#//api/name/delay">delay</a>.</p></span>
+after a given delay.</p></span>
 	</span>
 	
 	
@@ -237,8 +237,8 @@ to be modified after the fact.</p></span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/delay">&nbsp;&nbsp;delay</a></code>
-		<span class="tooltip"><p>Allows the length of the <a href="#//api/name/delay">delay</a> after which the gesture
+		<code><a href="#//api/name/handlerDelay">&nbsp;&nbsp;handlerDelay</a></code>
+		<span class="tooltip"><p>Allows the length of the delay after which the gesture
 recognizer will be fired to modify.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -247,7 +247,7 @@ recognizer will be fired to modify.</p></span>
 	<span class="tooltip">
 		<code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
 		<span class="tooltip"><p>If the recognizer happens to be fired, calling this method
-will stop it from firing, but only if a <a href="#//api/name/delay">delay</a> is set.</p></span>
+will stop it from firing, but only if a delay is set.</p></span>
 	</span>
 	
 	
@@ -263,47 +263,6 @@ will stop it from firing, but only if a <a href="#//api/name/delay">delay</a> is
 					<div class="section section-methods">
 						<a title="Properties" name="properties"></a>
 						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/delay" title="delay"></a>
-	<h3 class="subsubtitle method-title">delay</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Allows the length of the <a href="#//api/name/delay">delay</a> after which the gesture
-recognizer will be fired to modify.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval delay</code></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Allows the length of the <a href="#//api/name/delay">delay</a> after which the gesture
-recognizer will be fired to modify.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UIGestureRecognizer+BlocksKit.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/handler" title="handler"></a>
@@ -330,6 +289,47 @@ to be modified after the fact.</p>
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Allows the block that will be fired by the gesture recognizer
 to be modified after the fact.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIGestureRecognizer+BlocksKit.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handlerDelay" title="handlerDelay"></a>
+	<h3 class="subsubtitle method-title">handlerDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows the length of the delay after which the gesture
+recognizer will be fired to modify.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval handlerDelay</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows the length of the delay after which the gesture
+recognizer will be fired to modify.</p>
 	</div>
 	
 	
@@ -395,7 +395,7 @@ subclass, or <code>nil</code>.</p>
 		<p>An autoreleased gesture recognizer that will call the given block.</p>
 
 <p>For convenience and compatibility reasons, this method is indentical
-to using <a href="#//api/name/recognizerWithHandler:delay:">recognizerWithHandler:delay:</a> with a <a href="#//api/name/delay">delay</a> of 0.0.</p>
+to using <a href="#//api/name/recognizerWithHandler:delay:">recognizerWithHandler:delay:</a> with a delay of 0.0.</p>
 	</div>
 	
 	
@@ -489,7 +489,7 @@ the given block asynchronously after a number of seconds.</p>
 	
 	<div class="method-subsection brief-description">
 		<p>If the recognizer happens to be fired, calling this method
-will stop it from firing, but only if a <a href="#//api/name/delay">delay</a> is set.</p>
+will stop it from firing, but only if a delay is set.</p>
 	</div>		
 	
 	
@@ -505,10 +505,10 @@ will stop it from firing, but only if a <a href="#//api/name/delay">delay</a> is
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>If the recognizer happens to be fired, calling this method
-will stop it from firing, but only if a <a href="#//api/name/delay">delay</a> is set.</p><div class="warning"><p>This method is not for arbitrarily canceling the
+will stop it from firing, but only if a delay is set.</p><div class="warning"><p>This method is not for arbitrarily canceling the
 firing of a recognizer, but will only function for a block
 <a href="#//api/name/handler">handler</a> <em>after the recognizer has already been fired</em>.  Be
-sure to make your <a href="#//api/name/delay">delay</a> times accomodate this likelihood.</p></div>
+sure to make your delay times accomodate this likelihood.</p></div>
 	</div>
 	
 	
@@ -564,7 +564,7 @@ sure to make your <a href="#//api/name/delay">delay</a> times accomodate this li
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Initializes an allocated gesture recognizer that will call the given block.</p>
 
-<p>This method is indentical to calling <a href="#//api/name/initWithHandler:delay:">initWithHandler:delay:</a> with a <a href="#//api/name/delay">delay</a> of 0.0.</p>
+<p>This method is indentical to calling <a href="#//api/name/initWithHandler:delay:">initWithHandler:delay:</a> with a delay of 0.0.</p>
 	</div>
 	
 	
@@ -589,7 +589,7 @@ sure to make your <a href="#//api/name/delay">delay</a> times accomodate this li
 	
 	<div class="method-subsection brief-description">
 		<p>Initializes an allocated gesture recognizer that will call the given block
-after a given <a href="#//api/name/delay">delay</a>.</p>
+after a given delay.</p>
 	</div>		
 	
 	
@@ -625,7 +625,7 @@ after a given <a href="#//api/name/delay">delay</a>.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Initializes an allocated gesture recognizer that will call the given block
-after a given <a href="#//api/name/delay">delay</a>.</p>
+after a given delay.</p>
 
 <p>An alternative to the designated initializer.</p>
 	</div>
@@ -657,7 +657,7 @@ after a given <a href="#//api/name/delay">delay</a>.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-01)</span><br />
+						<p><span class="copyright">&copy; 2012 Dizzy Technology. All rights reserved. (Last updated: 2012-02-06)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 744)</a>.</span></p>
 						
